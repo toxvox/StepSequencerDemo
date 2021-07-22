@@ -441,7 +441,7 @@ public:
         updatePlayButtonText();
 
         settingsButton.onClick  = [this] { EngineHelpers::showAudioDeviceSettings (engine); };
-        playPauseButton.onClick = [this] { EngineHelpers::togglePlay (edit); };
+        playPauseButton.onClick = [this] { EngineHelpers::togglePlay (*edit); };
         randomiseButton.onClick = [this] { getClip()->getPattern (0).randomiseSteps(); };
         clearButton.onClick     = [this] { getClip()->getPattern (0).clear(); };
         loadProjectButton.onClick = [this]
@@ -462,7 +462,7 @@ public:
         };
 
         tempoSlider.setRange (30.0, 220.0, 0.1);
-        tempoSlider.setValue (edit.tempoSequence.getTempos()[0]->getBpm(), dontSendNotification);
+        tempoSlider.setValue (edit->tempoSequence.getTempos()[0]->getBpm(), dontSendNotification);
         tempoSlider.addListener (this);
 
         setSize (600, 400);
@@ -478,12 +478,12 @@ public:
     void sliderValueChanged (Slider*) override
     {        
         if (! ModifierKeys::getCurrentModifiers().isAnyMouseButtonDown())
-            edit.tempoSequence.getTempos()[0]->setBpm (tempoSlider.getValue());
+            edit->tempoSequence.getTempos()[0]->setBpm (tempoSlider.getValue());
     }
 
     void sliderDragEnded (Slider*) override
     {
-        edit.tempoSequence.getTempos()[0]->setBpm (tempoSlider.getValue());
+        edit->tempoSequence.getTempos()[0]->setBpm (tempoSlider.getValue());
     }
 
     void paint (Graphics& g) override
@@ -515,8 +515,8 @@ public:
 private:
     //==============================================================================
     te::Engine engine { ProjectInfo::projectName };
-    te::Edit edit { engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 };
-    te::TransportControl& transport { edit.getTransport() };
+    std::unique_ptr<te::Edit> edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );
+    te::TransportControl& transport { edit->getTransport() };
     
     juce::File editFile;
 
@@ -527,10 +527,10 @@ private:
     //==============================================================================
     te::StepClip::Ptr createStepClip()
     {
-        if (auto track = EngineHelpers::getOrInsertAudioTrackAt (edit, 0))
+        if (auto track = EngineHelpers::getOrInsertAudioTrackAt (*edit, 0))
         {
             // Find length of 1 bar
-            const te::EditTimeRange editTimeRange (0, edit.tempoSequence.barsBeatsToTime ({ 1, 0.0 }));
+            const te::EditTimeRange editTimeRange (0, edit->tempoSequence.barsBeatsToTime ({ 1, 0.0 }));
             track->insertNewClip (te::TrackItem::Type::step, "Step Clip", editTimeRange, nullptr);
 
             if (auto stepClip = getClip())
@@ -543,7 +543,7 @@ private:
     Array<File> createSampleFiles()
     {
         Array<File> files;
-        const auto destDir = edit.getTempDirectory (true);
+        const auto destDir = edit->getTempDirectory (true);
         jassert (destDir != File());
 
         using namespace DemoBinaryData;
@@ -566,7 +566,7 @@ private:
     {
         if (auto stepClip = getClip())
         {
-            if (auto sampler = dynamic_cast<te::SamplerPlugin*> (edit.getPluginCache().createNewPlugin (te::SamplerPlugin::xmlTypeName, {}).get()))
+            if (auto sampler = dynamic_cast<te::SamplerPlugin*> (edit->getPluginCache().createNewPlugin (te::SamplerPlugin::xmlTypeName, {}).get()))
             {
                 stepClip->getTrack()->pluginList.insertPlugin (*sampler, 0, nullptr);
 
@@ -592,7 +592,7 @@ private:
     //==============================================================================
     te::StepClip::Ptr getClip()
     {
-        if (auto track = EngineHelpers::getOrInsertAudioTrackAt (edit, 0))
+        if (auto track = EngineHelpers::getOrInsertAudioTrackAt (*edit, 0))
             if (auto clip = dynamic_cast<te::StepClip*> (track->getClips()[0]))
                 return *clip;
 
