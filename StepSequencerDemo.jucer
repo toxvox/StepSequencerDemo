@@ -6,6 +6,8 @@
               addUsingNamespaceToJuceHeader="1" id="NWvMFC" jucerFormatVersion="1">
   <MAINGROUP id="oXh3FO" name="StepSequencerDemo">
     <GROUP id="{9266575E-EBDC-3B68-7AF6-A4B88F5A567E}" name="Source">
+      <FILE id="kD7hO2" name="EditFileManager.h" compile="0" resource="0"
+            file="Source/EditFileManager.h"/>
       <FILE id="ukGWmY" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
       <FILE id="YvJJQI" name="StepSequencerDemo.h" compile="0" resource="0"
             file="Source/StepSequencerDemo.h"/>

@@ -427,39 +427,47 @@ class StepSequencerDemo : public Component,
 {
 public:
     //==============================================================================
-    StepSequencerDemo()
+    StepSequencerDemo(juce::File* editFileToLoad = nullptr)
     {
-        transport.addChangeListener (this);
+        
+        if(editFileToLoad != nullptr)
+        {
+            DBG("Load project from file");
+            edit = te::loadEditFromFile(engine, *editFileToLoad);
+            /*
+            edit = std::make_unique<te::Edit>(te::Edit::Options {
+                engine,
+                te::loadEditFromFile(engine, *editFileToLoad, {}),
+                te::ProjectItemID::createNewID(0),
+                te::Edit::forEditing,
+                nullptr,
+                te::Edit::getDefaultNumUndoLevels(),
+                [=] { return *editFileToLoad; }
+            });
+             */
+        }
+        
+        else
+        {
+            DBG("Create empty project");
+            edit = te::createEmptyEdit(engine, editFile);
+            //edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );
+        }
+        
+        
+        edit->getTransport().addChangeListener (this);
 
         createStepClip();
         createSamplerPlugin (createSampleFiles());
 
         stepEditor = std::make_unique<StepEditor> (*getClip());
         Helpers::addAndMakeVisible (*this, { &settingsButton, &playPauseButton, &randomiseButton,
-                                             &clearButton, &tempoSlider, stepEditor.get(), &loadProjectButton });
-
-        updatePlayButtonText();
+                                             &clearButton, &tempoSlider, stepEditor.get() });
 
         settingsButton.onClick  = [this] { EngineHelpers::showAudioDeviceSettings (engine); };
         playPauseButton.onClick = [this] { EngineHelpers::togglePlay (*edit); };
         randomiseButton.onClick = [this] { getClip()->getPattern (0).randomiseSteps(); };
         clearButton.onClick     = [this] { getClip()->getPattern (0).clear(); };
-        loadProjectButton.onClick = [this]
-        {
-            editFile = juce::File::getSpecialLocation(juce::File::userDocumentsDirectory).getChildFile("TestTracktionFile.xml");
-
-            //edit = te::createEmptyEdit(engine, editFile);
-                        
-            edit = std::make_unique<te::Edit>(te::Edit::Options {
-                engine,
-                te::loadEditFromFile(engine, editFile, {}),
-                te::ProjectItemID::createNewID(0),
-                te::Edit::forEditing,
-                nullptr,
-                te::Edit::getDefaultNumUndoLevels(),
-                [=] { return editFile; }
-            });
-        };
 
         tempoSlider.setRange (30.0, 220.0, 0.1);
         tempoSlider.setValue (edit->tempoSequence.getTempos()[0]->getBpm(), dontSendNotification);
@@ -500,7 +508,6 @@ public:
             settingsButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
             playPauseButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
             randomiseButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
-            loadProjectButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
             clearButton.setBounds (topR.reduced (2));
         }
 
@@ -512,15 +519,22 @@ public:
         stepEditor->setBounds (r);
     }
 
+    std::unique_ptr<te::Edit> edit = nullptr;
+    
+    
 private:
     //==============================================================================
     te::Engine engine { ProjectInfo::projectName };
-    std::unique_ptr<te::Edit> edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );
-    te::TransportControl& transport { edit->getTransport() };
     
+    
+    //std::unique_ptr<te::Edit> edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );
+
+    
+    //te::TransportControl& transport { edit->getTransport() };
+
     juce::File editFile;
 
-    TextButton settingsButton { "Settings" }, playPauseButton { "Play" }, randomiseButton { "Randomise" }, clearButton { "Clear" } , loadProjectButton { "Load Project" } ;
+    TextButton settingsButton { "Settings" }, playPauseButton { "Play" }, randomiseButton { "Randomise" }, clearButton { "Clear" };
     Slider tempoSlider;
     std::unique_ptr<StepEditor> stepEditor;
 
@@ -578,8 +592,8 @@ private:
                     sampler->setSoundParams (sampler->getNumSounds() - 1, channel->noteNumber, channel->noteNumber, channel->noteNumber);
                     jassert (error.isEmpty());
 
-                    for (auto& pattern : stepClip->getPatterns())
-                        pattern.randomiseChannel (channel->getIndex());
+                    //for (auto& pattern : stepClip->getPatterns())
+                        //pattern.randomiseChannel (channel->getIndex());
                 }
             }
         }
@@ -601,7 +615,7 @@ private:
 
     void updatePlayButtonText()
     {
-        playPauseButton.setButtonText (transport.isPlaying() ? "Pause" : "Play");
+        playPauseButton.setButtonText (edit->getTransport().isPlaying() ? "Pause" : "Play");
     }
 
     void changeListenerCallback (ChangeBroadcaster*) override

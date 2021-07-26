@@ -7,6 +7,7 @@
 */
 
 #include <JuceHeader.h>
+#include "EditFileManager.h"
 #include "StepSequencerDemo.h"
 
 class Application    : public juce::JUCEApplication
@@ -20,7 +21,7 @@ public:
 
     void initialise (const juce::String&) override
     {
-        mainWindow.reset (new MainWindow ("StepSequencerDemo", new StepSequencerDemo, *this));
+        mainWindow.reset (new MainWindow ("StepSequencerDemo", new EditFileManager, *this));
     }
 
     void shutdown() override                         { mainWindow = nullptr; }
