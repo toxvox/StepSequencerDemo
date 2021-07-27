@@ -427,34 +427,18 @@ class StepSequencerDemo : public Component,
 {
 public:
     //==============================================================================
-    StepSequencerDemo(juce::File* editFileToLoad = nullptr)
+    StepSequencerDemo(te::Engine& engine_, juce::File* editFileToLoad = nullptr) : engine(engine_)
     {
         
         if(editFileToLoad != nullptr)
         {
-            DBG("Load project from file");
             edit = te::loadEditFromFile(engine, *editFileToLoad);
-            /*
-            edit = std::make_unique<te::Edit>(te::Edit::Options {
-                engine,
-                te::loadEditFromFile(engine, *editFileToLoad, {}),
-                te::ProjectItemID::createNewID(0),
-                te::Edit::forEditing,
-                nullptr,
-                te::Edit::getDefaultNumUndoLevels(),
-                [=] { return *editFileToLoad; }
-            });
-             */
         }
-        
         else
         {
-            DBG("Create empty project");
             edit = te::createEmptyEdit(engine, editFile);
-            //edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );
         }
-        
-        
+
         edit->getTransport().addChangeListener (this);
 
         createStepClip();
@@ -479,6 +463,7 @@ public:
     ~StepSequencerDemo()
     {
         // Clean up our temporary sample files and projects
+        edit->getTransport().stop(false, false);
         engine.getTemporaryFileManager().getTempDirectory().deleteRecursively();
     }
 
@@ -524,7 +509,8 @@ public:
     
 private:
     //==============================================================================
-    te::Engine engine { ProjectInfo::projectName };
+    
+    te::Engine& engine;
     
     
     //std::unique_ptr<te::Edit> edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );

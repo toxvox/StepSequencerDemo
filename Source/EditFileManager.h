@@ -16,7 +16,7 @@ public:
         Helpers::addAndMakeVisible (*this, { &newProjectButton, &closeProjectButton, &loadProjectButton, &saveProjectButton, &saveAsProjectButton });
 
         newProjectButton.onClick  = [this] {
-            stepSequencer = std::make_unique<StepSequencerDemo>();
+            stepSequencer = std::make_unique<StepSequencerDemo>(engine);
             stepSequencer->setBounds(0, 30, 600, 400);
             addAndMakeVisible(stepSequencer.get());
         };
@@ -30,8 +30,8 @@ public:
         };
         
         loadProjectButton.onClick = [this] {
-            editFile = new juce::File(juce::File::getSpecialLocation(juce::File::userDocumentsDirectory).getChildFile("TestTracktionFile.xml"));
-            stepSequencer = std::make_unique<StepSequencerDemo>(editFile);
+            editFile = new juce::File(juce::File::getSpecialLocation(juce::File::userDocumentsDirectory).getChildFile("TestTracktionFile_new_Version.xml"));
+            stepSequencer = std::make_unique<StepSequencerDemo>(engine, editFile);
             stepSequencer->setBounds(0, 30, 600, 400);
             addAndMakeVisible(stepSequencer.get());
         };
@@ -78,6 +78,8 @@ public:
     }
 
 private:
+    
+    te::Engine engine { ProjectInfo::projectName };
     
     TextButton  newProjectButton { "New Project" },
                 closeProjectButton { "Close Project" },
