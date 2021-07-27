@@ -16,8 +16,13 @@ public:
         Helpers::addAndMakeVisible (*this, { &newProjectButton, &closeProjectButton, &loadProjectButton, &saveProjectButton, &saveAsProjectButton });
 
         newProjectButton.onClick  = [this] {
+            if(stepSequencer != nullptr)
+            {
+                removeChildComponent(stepSequencer.get());
+                stepSequencer.reset();
+            }
             stepSequencer = std::make_unique<StepSequencerDemo>(engine);
-            stepSequencer->setBounds(0, 30, 600, 400);
+            stepSequencer->setBounds(0, 30, getWidth(), getHeight()-30);
             addAndMakeVisible(stepSequencer.get());
         };
         
@@ -30,25 +35,32 @@ public:
         };
         
         loadProjectButton.onClick = [this] {
-            editFile = new juce::File(juce::File::getSpecialLocation(juce::File::userDocumentsDirectory).getChildFile("TestTracktionFile_new_Version.xml"));
-            stepSequencer = std::make_unique<StepSequencerDemo>(engine, editFile);
-            stepSequencer->setBounds(0, 30, 600, 400);
-            addAndMakeVisible(stepSequencer.get());
+            fileChooser.reset (new juce::FileChooser ("Choose a edit file", juce::File::getSpecialLocation(juce::File::userDocumentsDirectory), "*.tracktionedit", true));
+            fileChooser->launchAsync (juce::FileBrowserComponent::openMode | juce::FileBrowserComponent::canSelectFiles,
+                 [this] (const juce::FileChooser& chooser)
+                 {
+                    if(!this->fileChooser->getURLResult().isEmpty() && this->fileChooser->getURLResult().getLocalFile().exists())
+                    {
+                        if(stepSequencer != nullptr)
+                        {
+                            removeChildComponent(stepSequencer.get());
+                            stepSequencer.reset();
+                        }
+                        stepSequencer = std::make_unique<StepSequencerDemo>(engine, this->fileChooser->getURLResult());
+                        stepSequencer->setBounds(0, 30, getWidth(), getHeight()-30);
+                        addAndMakeVisible(stepSequencer.get());
+                    }
+                 });
         };
         
         saveProjectButton.onClick = [this] {
             if(stepSequencer)
-            {
-                te::EditFileOperations(*stepSequencer->edit).save(true, false, true);
-            }
+                te::EditFileOperations(*stepSequencer->edit).save(true, true, true);
         };
         
         saveAsProjectButton.onClick = [this] {
             if(stepSequencer)
-            {
-                editFile = new juce::File(juce::File::getSpecialLocation(juce::File::userDocumentsDirectory).getChildFile("TestTracktionFile_new_Version.xml"));
-                te::EditFileOperations(*stepSequencer->edit).writeToFile(*editFile, false);
-            }
+                te::EditFileOperations(*stepSequencer->edit).saveAs();
         };
         
         setSize (600, 430);
@@ -69,17 +81,23 @@ public:
         auto r = getLocalBounds();
         r.setHeight(30);
 
-        newProjectButton.setBounds (r.removeFromLeft(120).reduced (2));
-        closeProjectButton.setBounds (r.removeFromLeft(120).reduced (2));
-        loadProjectButton.setBounds (r.removeFromLeft(120).reduced (2));
-        saveProjectButton.setBounds (r.removeFromLeft(120).reduced (2));
-        saveAsProjectButton.setBounds (r.removeFromLeft(120).reduced (2));
+        newProjectButton.setBounds (r.removeFromLeft(getWidth()/5).reduced (2));
+        closeProjectButton.setBounds (r.removeFromLeft(getWidth()/5).reduced (2));
+        loadProjectButton.setBounds (r.removeFromLeft(getWidth()/5).reduced (2));
+        saveProjectButton.setBounds (r.removeFromLeft(getWidth()/5).reduced (2));
+        saveAsProjectButton.setBounds (r.removeFromLeft(getWidth()/5).reduced (2));
 
+        if(stepSequencer)
+            stepSequencer->setBounds(0, 30, getWidth(), getHeight()-30);
+        
     }
+    
 
 private:
     
     te::Engine engine { ProjectInfo::projectName };
+    
+    std::unique_ptr<juce::FileChooser> fileChooser;
     
     TextButton  newProjectButton { "New Project" },
                 closeProjectButton { "Close Project" },

@@ -427,18 +427,30 @@ class StepSequencerDemo : public Component,
 {
 public:
     //==============================================================================
-    StepSequencerDemo(te::Engine& engine_, juce::File* editFileToLoad = nullptr) : engine(engine_)
+    StepSequencerDemo(te::Engine& engine_, juce::URL editFileToLoad) : engine(engine_)
     {
+        editFile = editFileToLoad.getLocalFile();
+        edit = te::loadEditFromFile(engine, editFile);
         
-        if(editFileToLoad != nullptr)
-        {
-            edit = te::loadEditFromFile(engine, *editFileToLoad);
-        }
-        else
-        {
-            edit = te::createEmptyEdit(engine, editFile);
-        }
+        setup();
+    }
+    
+    StepSequencerDemo(te::Engine& engine_) : engine(engine_)
+    {
+        editFile = juce::File(File::getSpecialLocation (File::userDocumentsDirectory).getChildFile("NewStepSequencer.tracktionedit"));
+        edit = te::createEmptyEdit(engine, editFile);
 
+        setup();
+    }
+
+    ~StepSequencerDemo()
+    {
+        // Clean up our temporary sample files and projects
+        engine.getTemporaryFileManager().getTempDirectory().deleteRecursively();
+    }
+    
+    void setup()
+    {
         edit->getTransport().addChangeListener (this);
 
         createStepClip();
@@ -458,13 +470,6 @@ public:
         tempoSlider.addListener (this);
 
         setSize (600, 400);
-    }
-
-    ~StepSequencerDemo()
-    {
-        // Clean up our temporary sample files and projects
-        edit->getTransport().stop(false, false);
-        engine.getTemporaryFileManager().getTempDirectory().deleteRecursively();
     }
 
     //==============================================================================
@@ -490,10 +495,10 @@ public:
 
         {
             auto topR = r.removeFromTop (30);
-            settingsButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
-            playPauseButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
-            randomiseButton.setBounds (topR.removeFromLeft (topR.getWidth() / 2).reduced (2));
-            clearButton.setBounds (topR.reduced (2));
+            settingsButton.setBounds (topR.removeFromLeft (getWidth()/4).reduced (2));
+            playPauseButton.setBounds (topR.removeFromLeft (getWidth()/4).reduced (2));
+            randomiseButton.setBounds (topR.removeFromLeft (getWidth()/4).reduced (2));
+            clearButton.setBounds (topR.removeFromLeft (getWidth()/4).reduced (2));
         }
 
         {
@@ -511,10 +516,6 @@ private:
     //==============================================================================
     
     te::Engine& engine;
-    
-    
-    //std::unique_ptr<te::Edit> edit = std::make_unique<te::Edit>( engine, te::createEmptyEdit (engine), te::Edit::forEditing, nullptr, 0 );
-
     
     //te::TransportControl& transport { edit->getTransport() };
 

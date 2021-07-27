@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Unknown" projectID="0/1c9ebb3" creationTime="1627411797547"
+      lastSignificantChange="17ae94d9ca4" modifiedBy="Halil Kleinmann">
+  <TRANSPORT loopPoint1="0.0" loopPoint2="2.0" looping="1" position="1.15283446711716"/>
+  <MACROPARAMETERS id="1001"/>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <VIDEO/>
+  <AUTOMAPXML/>
+  <CLICKTRACK level="0.6000000238418579"/>
+  <ID3VORBISMETADATA trackNumber="1" date="2021"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.6376281380653381" id="1003" enabled="1">
+      <MACROPARAMETERS id="1005"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS/>
+  <AUXBUSNAMES/>
+  <INPUTDEVICES>
+    <INPUTDEVICE name="Input 1"/>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <ARRANGERTRACK name="Arranger" id="1025">
+    <MACROPARAMETERS id="1027"/>
+    <MODIFIERS/>
+  </ARRANGERTRACK>
+  <TEMPOTRACK name="Global" id="1030">
+    <MACROPARAMETERS id="1032"/>
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MARKERTRACK id="1007" name="Marker">
+    <MACROPARAMETERS id="1009"/>
+    <MODIFIERS/>
+  </MARKERTRACK>
+  <CHORDTRACK name="Chord" id="1035">
+    <MACROPARAMETERS id="1037"/>
+    <MODIFIERS/>
+  </CHORDTRACK>
+  <TRACK id="1012" midiVProp="0.28125" midiVOffset="0.359375">
+    <MACROPARAMETERS id="1014"/>
+    <MODIFIERS/>
+    <STEPCLIP name="Step Clip" start="0.0" length="2.0" offset="0.0" id="1040"
+              sequence="0" colour="ffff0000">
+      <CHANNELS>
+        <CHANNEL channel="1" note="36" velocity="96" name="Bass Drum 1"/>
+        <CHANNEL channel="1" note="38" velocity="96" name="Acoustic Snare"/>
+        <CHANNEL channel="1" note="42" velocity="50.0" name="Closed Hi-Hat"/>
+        <CHANNEL channel="1" note="46" velocity="96" name="Open Hi-Hat"/>
+        <CHANNEL channel="1" note="39" velocity="96" name="Hand Clap"/>
+        <CHANNEL channel="1" note="45" velocity="96" name="Low Tom"/>
+        <CHANNEL channel="1" note="50" velocity="96" name="High Tom"/>
+        <CHANNEL channel="1" note="51" velocity="96" name="Ride Cymbal 1"/>
+      </CHANNELS>
+      <PATTERNS>
+        <PATTERN numNotes="16" noteLength="0.25">
+          <CHANNEL pattern="1000100010001"/>
+          <CHANNEL pattern="1000000010000"/>
+          <CHANNEL pattern="101010101010101"/>
+        </PATTERN>
+      </PATTERNS>
+    </STEPCLIP>
+    <PLUGIN type="sampler" windowLocked="1" id="1043" enabled="1">
+      <MACROPARAMETERS id="1044"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/kick.ogg"
+             name="Bass Drum 1" startTime="0.0" length="0.0" keyNote="36"
+             minNote="36" maxNote="36" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/snare.ogg"
+             name="Acoustic Snare" startTime="0.0" length="0.0" keyNote="38"
+             minNote="38" maxNote="38" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/closed_hat.ogg"
+             name="Closed Hi-Hat" startTime="0.0" length="0.0" keyNote="42"
+             minNote="42" maxNote="42" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/open_hat.ogg"
+             name="Open Hi-Hat" startTime="0.0" length="0.0" keyNote="46"
+             minNote="46" maxNote="46" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/clap.ogg"
+             name="Hand Clap" startTime="0.0" length="0.0" keyNote="39" minNote="39"
+             maxNote="39" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/low_tom.ogg"
+             name="Low Tom" startTime="0.0" length="0.0" keyNote="45" minNote="45"
+             maxNote="45" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/high_tom.ogg"
+             name="High Tom" startTime="0.0" length="0.0" keyNote="50" minNote="50"
+             maxNote="50" gainDb="1.0" pan="0.0"/>
+      <SOUND source="/Users/halil/Library/StepSequencerDemo/Temporary/edit_0_1c9ebb3/ride.ogg"
+             name="Ride Cymbal 1" startTime="0.0" length="0.0" keyNote="51"
+             minNote="51" maxNote="51" gainDb="1.0" pan="0.0"/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1017" enabled="1" remapOnTempoChange="1">
+      <MACROPARAMETERS id="1018"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1021" enabled="1">
+      <MACROPARAMETERS id="1022"/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <ARADOCUMENT/>
+  <CONTROLLERMAPPINGS/>
+</EDIT>
