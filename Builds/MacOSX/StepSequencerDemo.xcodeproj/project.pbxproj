@@ -27,6 +27,7 @@
 		776EAF5FD68ACCAC76BA2551 /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 40D2235DC279E93296C470E7; };
 		80EEA01D277B368F0AC34A39 /* include_tracktion_engine_audio_files.cpp */ = {isa = PBXBuildFile; fileRef = 50D3692A97AFBBCF940050CE; };
 		844A43E80AF2C4290F7F6BDA /* WebKit.framework */ = {isa = PBXBuildFile; fileRef = 40C0076136DF0044D814EF74; };
+		8862D8227B13A4F587F75538 /* include_tracktion_graph.cpp */ = {isa = PBXBuildFile; fileRef = 005E286265A94B6A5EE65C02; };
 		89ADD952BF024D773B506852 /* include_juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = C1FA31B84FAD7229E2F0B26F; };
 		94F89732B6A43A9317302F19 /* AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = D51F27EA831C27B937585348; };
 		9D14D34193D0C3B43FADB9B2 /* include_juce_core.mm */ = {isa = PBXBuildFile; fileRef = 7BFC9AC3A22518D854F73986; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005E286265A94B6A5EE65C02 /* include_tracktion_graph.cpp */ /* include_tracktion_graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_tracktion_graph.cpp; path = ../../JuceLibraryCode/include_tracktion_graph.cpp; sourceTree = SOURCE_ROOT; };
 		014B983EEED48E021770A24B /* CoreMIDI.framework */ /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		02230B5498837C92067F9A43 /* include_tracktion_engine_plugins.cpp */ /* include_tracktion_engine_plugins.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_tracktion_engine_plugins.cpp; path = ../../JuceLibraryCode/include_tracktion_engine_plugins.cpp; sourceTree = SOURCE_ROOT; };
 		0813D63E437C32D07D5CD3D2 /* include_tracktion_engine_model_2.cpp */ /* include_tracktion_engine_model_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_tracktion_engine_model_2.cpp; path = ../../JuceLibraryCode/include_tracktion_engine_model_2.cpp; sourceTree = SOURCE_ROOT; };
@@ -55,6 +57,7 @@
 		15653E5C380348A1B253050B /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		1F1DAE06B3651FC7B1779FCA /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24875A43B1BB7EAC3536D81F /* include_tracktion_engine_airwindows.cpp */ /* include_tracktion_engine_airwindows.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_tracktion_engine_airwindows.cpp; path = ../../JuceLibraryCode/include_tracktion_engine_airwindows.cpp; sourceTree = SOURCE_ROOT; };
+		2655A96E153CB7584642E053 /* tracktion_graph */ /* tracktion_graph */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tracktion_graph; path = ../../../../framework/tracktion_engine/modules/tracktion_graph; sourceTree = SOURCE_ROOT; };
 		2ACC80AEDE14B14F250C8AA4 /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
 		3249527351CD59FC83BC18D6 /* Info-App.plist */ /* Info-App.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-App.plist"; path = "Info-App.plist"; sourceTree = SOURCE_ROOT; };
 		366303D75D23A8072DDCB1B6 /* Main.cpp */ /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../../Source/Main.cpp; sourceTree = SOURCE_ROOT; };
@@ -63,6 +66,7 @@
 		3CB5C81C5C312FB6E405D636 /* juce_audio_devices */ /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = ../../../../framework/tracktion_engine/modules/juce/modules/juce_audio_devices; sourceTree = SOURCE_ROOT; };
 		40C0076136DF0044D814EF74 /* WebKit.framework */ /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		40D2235DC279E93296C470E7 /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A16E6886353B348CAF6DCC7 /* EditFileManager.h */ /* EditFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EditFileManager.h; path = ../../Source/EditFileManager.h; sourceTree = SOURCE_ROOT; };
 		50D3692A97AFBBCF940050CE /* include_tracktion_engine_audio_files.cpp */ /* include_tracktion_engine_audio_files.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_tracktion_engine_audio_files.cpp; path = ../../JuceLibraryCode/include_tracktion_engine_audio_files.cpp; sourceTree = SOURCE_ROOT; };
 		53714D57F6A011FACB7BBE7C /* include_juce_osc.cpp */ /* include_juce_osc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_osc.cpp; path = ../../JuceLibraryCode/include_juce_osc.cpp; sourceTree = SOURCE_ROOT; };
 		5C732B9D1A7236E8857588ED /* include_tracktion_engine_model_1.cpp */ /* include_tracktion_engine_model_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_tracktion_engine_model_1.cpp; path = ../../JuceLibraryCode/include_tracktion_engine_model_1.cpp; sourceTree = SOURCE_ROOT; };
@@ -143,6 +147,7 @@
 		37D5421611C003CF8C6C9747 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4A16E6886353B348CAF6DCC7,
 				366303D75D23A8072DDCB1B6,
 				9E36F3C5B4E5FFF66469A5A9,
 			);
@@ -173,6 +178,7 @@
 				02230B5498837C92067F9A43,
 				E33D9C1B506E8EB8C8DA688E,
 				3A98E272983F0F42E5EDCD85,
+				005E286265A94B6A5EE65C02,
 				2ACC80AEDE14B14F250C8AA4,
 			);
 			name = "JUCE Library Code";
@@ -203,6 +209,7 @@
 				E3C81A3733DA4DDC4C69DA3F,
 				E9E327A26270558D2B751AFC,
 				836C1980A32DA97BC4F76691,
+				2655A96E153CB7584642E053,
 			);
 			name = "JUCE Modules";
 			sourceTree = "<group>";
@@ -270,7 +277,7 @@
 		54F1F58FB4861DCB80870200 = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Tracktion";
 				TargetAttributes = {
 					2809289233E815FE01CE84AE = {
@@ -351,6 +358,7 @@
 				0483772E22577B4D5095E555,
 				3A1F286886F01E6BD1E85025,
 				C91DBE66E1C0E1D0E1F0C3FB,
+				8862D8227B13A4F587F75538,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +431,7 @@
 					"DEBUG=1",
 					"JUCE_DISPLAY_SPLASH_SCREEN=0",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x60102",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -438,10 +446,12 @@
 					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
 					"JUCE_MODULE_AVAILABLE_juce_osc=1",
 					"JUCE_MODULE_AVAILABLE_tracktion_engine=1",
+					"JUCE_MODULE_AVAILABLE_tracktion_graph=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
 					"JUCE_PLUGINHOST_AU=1",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JUCE_STANDALONE_APPLICATION=1",
+					"JUCE_MODAL_LOOPS_PERMITTED=1",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=0.0.1",
 					"JUCE_APP_VERSION_HEX=0x1",
@@ -490,7 +500,7 @@
 					"NDEBUG=1",
 					"JUCE_DISPLAY_SPLASH_SCREEN=0",
 					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x60102",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -505,10 +515,12 @@
 					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
 					"JUCE_MODULE_AVAILABLE_juce_osc=1",
 					"JUCE_MODULE_AVAILABLE_tracktion_engine=1",
+					"JUCE_MODULE_AVAILABLE_tracktion_graph=1",
 					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
 					"JUCE_PLUGINHOST_AU=1",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JUCE_STANDALONE_APPLICATION=1",
+					"JUCE_MODAL_LOOPS_PERMITTED=1",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=0.0.1",
 					"JUCE_APP_VERSION_HEX=0x1",

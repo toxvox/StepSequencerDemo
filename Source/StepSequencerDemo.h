@@ -532,10 +532,32 @@ private:
         {
             // Find length of 1 bar
             const te::EditTimeRange editTimeRange (0, edit->tempoSequence.barsBeatsToTime ({ 1, 0.0 }));
-            track->insertNewClip (te::TrackItem::Type::step, "Step Clip", editTimeRange, nullptr);
+            auto clip = track->insertNewClip (te::TrackItem::Type::step, "StepClip", editTimeRange, nullptr);
+            auto stepClip = static_cast<te::StepClip*>(clip);
+            
+            stepClip->setStart(0.0, true, true);
+            stepClip->setEnd(1.0, true);
+            
+            DBG("stepClip->getStartBeat: " + juce::String(stepClip->getStartBeat()));
+            DBG("stepClip->getContentStartBeat: " + juce::String(stepClip->getContentStartBeat()));
+            DBG("stepClip->getLengthInBeats: " + juce::String(stepClip->getLengthInBeats()));
+            DBG("stepClip->getEndBeat: " + juce::String(stepClip->getEndBeat()));
+            
+            DBG("stepClip->getLoopLength: " + juce::String(stepClip->getLoopLength()));
+            DBG("stepClip->getBeatsPerBar: " + juce::String(stepClip->getBeatsPerBar()));
+            
+            DBG("stepClip->getPosition().getStart: " + juce::String(stepClip->getPosition().getStart()));
+            DBG("stepClip->getPosition().getEnd: " + juce::String(stepClip->getPosition().getEnd()));
+            DBG("stepClip->getPosition().getLength: " + juce::String(stepClip->getPosition().getLength()));
+            
+            DBG("stepClip->getPattern(0).getNumNotes: " + juce::String(stepClip->getPattern(0).getNumNotes()));
+            
+            DBG("stepClip->getEditTimeRange().getStart: " + juce::String(stepClip->getEditTimeRange().getStart()));
+            DBG("stepClip->getEditTimeRange().getLength: " + juce::String(stepClip->getEditTimeRange().getLength()));
+            DBG("stepClip->getEditTimeRange().getEnd: " + juce::String(stepClip->getEditTimeRange().getEnd()));
+            
+            return EngineHelpers::loopAroundClip (*stepClip);
 
-            if (auto stepClip = getClip())
-                return EngineHelpers::loopAroundClip (*stepClip);
         }
 
         return {};

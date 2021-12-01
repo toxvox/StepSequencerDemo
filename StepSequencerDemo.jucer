@@ -3,7 +3,8 @@
 <JUCERPROJECT cppLanguageStandard="17" name="StepSequencerDemo" companyName="Tracktion"
               version="0.0.1" userNotes="This example shows how to build a step squencer and associated UI."
               companyWebsite="www.tracktion.com" projectType="guiapp" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="1" id="NWvMFC" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="1" id="NWvMFC" jucerFormatVersion="1"
+              defines="JUCE_MODAL_LOOPS_PERMITTED=1">
   <MAINGROUP id="oXh3FO" name="StepSequencerDemo">
     <GROUP id="{9266575E-EBDC-3B68-7AF6-A4B88F5A567E}" name="Source">
       <FILE id="kD7hO2" name="EditFileManager.h" compile="0" resource="0"
@@ -28,6 +29,7 @@
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="tracktion_engine" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="tracktion_graph" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
   </MODULES>
   <EXPORTFORMATS>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
@@ -50,6 +52,7 @@
         <MODULEPATH id="juce_gui_extra" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="juce_osc" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="tracktion_engine" path="../../framework/tracktion_engine/modules"/>
+        <MODULEPATH id="tracktion_graph" path="../../framework/tracktion_engine/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2017 targetFolder="Builds/VisualStudio2017">
@@ -72,6 +75,7 @@
         <MODULEPATH id="juce_gui_extra" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="juce_osc" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="tracktion_engine" path="../../framework/tracktion_engine/modules"/>
+        <MODULEPATH id="tracktion_graph" path="../../framework/tracktion_engine/modules"/>
       </MODULEPATHS>
     </VS2017>
     <XCODE_IPHONE targetFolder="Builds/iOS">
@@ -94,6 +98,7 @@
         <MODULEPATH id="juce_gui_extra" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="juce_osc" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="tracktion_engine" path="../../framework/tracktion_engine/modules"/>
+        <MODULEPATH id="tracktion_graph" path="../../framework/tracktion_engine/modules"/>
       </MODULEPATHS>
     </XCODE_IPHONE>
     <XCODE_MAC targetFolder="Builds/MacOSX">
@@ -116,6 +121,7 @@
         <MODULEPATH id="juce_gui_extra" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="juce_osc" path="../../framework/tracktion_engine/modules/juce/modules"/>
         <MODULEPATH id="tracktion_engine" path="../../framework/tracktion_engine/modules"/>
+        <MODULEPATH id="tracktion_graph" path="../../framework/tracktion_engine/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>

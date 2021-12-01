@@ -14,6 +14,9 @@
     <Filter Include="JUCE Modules\juce_audio_basics\buffers">
       <UniqueIdentifier>{5FCF559E-451A-CB1E-B177-A5DC5A0005BB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JUCE Modules\juce_audio_basics\midi\ump">
+      <UniqueIdentifier>{05CE33FC-868F-AA1A-12B8-79C98E753648}</UniqueIdentifier>
+    </Filter>
     <Filter Include="JUCE Modules\juce_audio_basics\midi">
       <UniqueIdentifier>{D78296AF-218E-B17E-7F8B-9D148601188D}</UniqueIdentifier>
     </Filter>
@@ -362,6 +365,15 @@
     <Filter Include="JUCE Modules\juce_graphics">
       <UniqueIdentifier>{4CED05DA-E0A2-E548-F753-1F2EF299A8E3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JUCE Modules\juce_gui_basics\accessibility\enums">
+      <UniqueIdentifier>{46AE69B8-AD58-4381-6CDE-25C8D75B01D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\juce_gui_basics\accessibility\interfaces">
+      <UniqueIdentifier>{E56CB4FC-32E8-8740-A3BB-B323CD937A99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\juce_gui_basics\accessibility">
+      <UniqueIdentifier>{4ECDCA0C-BB38-0729-A6B6-2FB0B4D0863B}</UniqueIdentifier>
+    </Filter>
     <Filter Include="JUCE Modules\juce_gui_basics\application">
       <UniqueIdentifier>{294E4CD5-B06F-97D1-04A3-51871CEA507C}</UniqueIdentifier>
     </Filter>
@@ -400,6 +412,9 @@
     </Filter>
     <Filter Include="JUCE Modules\juce_gui_basics\mouse">
       <UniqueIdentifier>{FE3CB19C-EF43-5CF5-DAF0-09D4E43D0AB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\juce_gui_basics\native\accessibility">
+      <UniqueIdentifier>{C0E5DD5D-F8F1-DD25-67D7-291946AB3828}</UniqueIdentifier>
     </Filter>
     <Filter Include="JUCE Modules\juce_gui_basics\native\x11">
       <UniqueIdentifier>{FE7E6CD5-C7A0-DB20-4E7E-D6E7F08C4578}</UniqueIdentifier>
@@ -1106,6 +1121,39 @@
     <Filter Include="JUCE Modules\tracktion_engine">
       <UniqueIdentifier>{75BD5FF0-E988-A6B3-4464-380861CBC878}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\3rd_party\farbot\include\farbot">
+      <UniqueIdentifier>{280105F2-479A-1813-6AB7-AB61FE4A7208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\3rd_party\farbot\include">
+      <UniqueIdentifier>{775A3354-E12F-EB8E-4058-650A06153851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\3rd_party\farbot\test">
+      <UniqueIdentifier>{1D9E2531-07AD-92CC-11C5-B22E3E695E6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\3rd_party\farbot">
+      <UniqueIdentifier>{58A4634D-511A-BBB4-849A-9FA953D2CDD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\3rd_party">
+      <UniqueIdentifier>{4D3BF4D7-C687-5E3A-E41F-7D1405E510C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\docs">
+      <UniqueIdentifier>{41C72925-FC78-3C25-5BA7-0AF5529945FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\tracktion_graph\nodes">
+      <UniqueIdentifier>{08C1B4EF-7745-3667-4D86-E27109B70678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\tracktion_graph\players">
+      <UniqueIdentifier>{E30276B3-DF4A-2B56-1CDD-312B6729B46C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\tracktion_graph">
+      <UniqueIdentifier>{02211866-021D-182C-DD9C-579AE3C21D09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph\utilities">
+      <UniqueIdentifier>{773D0472-6F6F-A7D9-F02D-7A4C57D87042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JUCE Modules\tracktion_graph">
+      <UniqueIdentifier>{24E50AEE-55D6-4D2B-B2B5-EADBCFD69DF4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="JUCE Modules">
       <UniqueIdentifier>{FE955B6B-68AC-AA07-70D8-2413F6DB65C8}</UniqueIdentifier>
     </Filter>
@@ -1128,6 +1176,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\buffers\juce_FloatVectorOperations.cpp">
       <Filter>JUCE Modules\juce_audio_basics\buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPMidi1ToMidi2DefaultTranslator.cpp">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPSysEx7.cpp">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPTests.cpp">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPUtils.cpp">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPView.cpp">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\juce_MidiBuffer.cpp">
       <Filter>JUCE Modules\juce_audio_basics\midi</Filter>
@@ -1234,19 +1297,7 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\audio_io\juce_AudioIODeviceType.cpp">
       <Filter>JUCE Modules\juce_audio_devices\audio_io</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPMidi1ToMidi2DefaultTranslator.cpp">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPSysEx7.cpp">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPTests.cpp">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPUtils.cpp">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPView.cpp">
       <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\juce_MidiDevices.cpp">
@@ -1295,6 +1346,12 @@
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\SourceI16Caller.cpp">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\SourceI24Caller.cpp">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\SourceI32Caller.cpp">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\StabilizedCallback.cpp">
@@ -1378,6 +1435,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SinkI24.cpp">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SinkI32.cpp">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SourceFloat.cpp">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClCompile>
@@ -1385,6 +1445,9 @@
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SourceI24.cpp">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SourceI32.cpp">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\opensles\AudioInputStreamOpenSLES.cpp">
@@ -2371,6 +2434,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_events\native\juce_mac_MessageManager.mm">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_events\native\juce_ScopedLowPowerModeDisabler.cpp">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_events\native\juce_win32_Messaging.cpp">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClCompile>
@@ -2704,6 +2770,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_graphics\juce_graphics.mm">
       <Filter>JUCE Modules\juce_graphics</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\juce_AccessibilityHandler.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\application\juce_Application.cpp">
       <Filter>JUCE Modules\juce_gui_basics\application</Filter>
     </ClCompile>
@@ -2750,6 +2819,9 @@
       <Filter>JUCE Modules\juce_gui_basics\components</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_ComponentListener.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_FocusTraverser.cpp">
       <Filter>JUCE Modules\juce_gui_basics\components</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_ModalComponentManager.cpp">
@@ -2952,6 +3024,24 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\mouse\juce_MouseListener.cpp">
       <Filter>JUCE Modules\juce_gui_basics\mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_android_Accessibility.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_ios_Accessibility.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_mac_Accessibility.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_mac_AccessibilitySharedCode.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_Accessibility.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_AccessibilityElement.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\x11\juce_linux_X11_DragAndDrop.cpp">
       <Filter>JUCE Modules\juce_gui_basics\native\x11</Filter>
@@ -4696,6 +4786,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\model\tracks\tracktion_MarkerTrack.cpp">
       <Filter>JUCE Modules\tracktion_engine\model\tracks</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\model\tracks\tracktion_MasterTrack.cpp">
+      <Filter>JUCE Modules\tracktion_engine\model\tracks</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\model\tracks\tracktion_TempoTrack.cpp">
       <Filter>JUCE Modules\tracktion_engine\model\tracks</Filter>
     </ClCompile>
@@ -4717,28 +4810,10 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_AudioNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_BufferingAudioNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_ClickNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_CombiningAudioNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_FadeInOutAudioNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_HissingAudioNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_MidiAudioNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_MixerAudioNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_PlayHeadAudioNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_WaveAudioNode.cpp">
@@ -4789,6 +4864,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_FadeInOutNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_HostedMidiInputDeviceNode.cpp">
+      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_InsertReturnNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
@@ -4813,6 +4891,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_MidiNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_MidiNode.test.cpp">
+      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_MidiOutputDeviceInstanceInjectingNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
@@ -4826,6 +4907,9 @@
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_PluginNode.cpp">
+      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_RackBenchmarks.test.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_RackInstanceNode.cpp">
@@ -4844,15 +4928,6 @@
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_SpeedRampWaveNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_tests_MidiNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_tests_RackNode.cpp">
-      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_tests_WaveNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_TimedMutingNode.cpp">
@@ -4879,6 +4954,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_WaveNode.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_WaveNode.test.cpp">
+      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_AbletonLink.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback</Filter>
     </ClCompile>
@@ -4900,10 +4978,10 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_MidiNoteDispatcher.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_tests_TransportControl.cpp">
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_TransportControl.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_TransportControl.cpp">
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_TransportControl.test.cpp">
       <Filter>JUCE Modules\tracktion_engine\playback</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\airwindows\tracktion_AirWindows.cpp">
@@ -4928,6 +5006,9 @@
       <Filter>JUCE Modules\tracktion_engine\plugins\effects</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\effects\tracktion_FourOscPlugin.cpp">
+      <Filter>JUCE Modules\tracktion_engine\plugins\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\effects\tracktion_ImpulseResponsePlugin.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins\effects</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\effects\tracktion_LatencyPlugin.cpp">
@@ -4975,6 +5056,9 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\internal\tracktion_InsertPlugin.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins\internal</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\internal\tracktion_InternalPlugins.test.cpp">
+      <Filter>JUCE Modules\tracktion_engine\plugins\internal</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\internal\tracktion_LevelMeter.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins\internal</Filter>
     </ClCompile>
@@ -4985,9 +5069,6 @@
       <Filter>JUCE Modules\tracktion_engine\plugins\internal</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\internal\tracktion_ReWirePlugin.cpp">
-      <Filter>JUCE Modules\tracktion_engine\plugins\internal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\internal\tracktion_tests_InternalPlugins.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins\internal</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\internal\tracktion_TextPlugin.cpp">
@@ -5008,10 +5089,10 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\tracktion_PluginManager.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\tracktion_PluginWindowState.cpp">
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\tracktion_Plugins.test.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\tracktion_tests_Plugins.cpp">
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\tracktion_PluginWindowState.cpp">
       <Filter>JUCE Modules\tracktion_engine\plugins</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\project\tracktion_Project.cpp">
@@ -5036,6 +5117,9 @@
       <Filter>JUCE Modules\tracktion_engine\selection</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\timestretch\tracktion_TimeStretch.cpp">
+      <Filter>JUCE Modules\tracktion_engine\timestretch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\timestretch\tracktion_TimeStretch.test.cpp">
       <Filter>JUCE Modules\tracktion_engine\timestretch</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\utilities\tracktion_AppFunctions.cpp">
@@ -5104,6 +5188,57 @@
     <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\tracktion_engine_utils.cpp">
       <Filter>JUCE Modules\tracktion_engine</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\test\test.cpp">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\nodes\tracktion_graph_ConnectedNode.test.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_LockFreeMultiThreadedNodePlayer.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_MultiThreadedNodePlayer.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_Node.test.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_NodePlayerThreadPools.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_NodeVisiting.test.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_PlayHead.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_PlayHeadState.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_TestUtilities.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_Utility.cpp">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_Allocation.test.cpp">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_AudioBufferPool.tests.cpp">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_Semaphore.cpp">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_Semaphore.tests.cpp">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_Threads.cpp">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph.cpp">
+      <Filter>JUCE Modules\tracktion_graph</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_basics.cpp">
       <Filter>JUCE Library Code</Filter>
     </ClCompile>
@@ -5167,8 +5302,14 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_tracktion_engine_utils.cpp">
       <Filter>JUCE Library Code</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\include_tracktion_graph.cpp">
+      <Filter>JUCE Library Code</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\EditFileManager.h">
+      <Filter>StepSequencerDemo\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\StepSequencerDemo.h">
       <Filter>StepSequencerDemo\Source</Filter>
     </ClInclude>
@@ -5190,7 +5331,55 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\buffers\juce_FloatVectorOperations.h">
       <Filter>JUCE Modules\juce_audio_basics\buffers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMP.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPacket.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPackets.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPConversion.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPConverters.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPDispatcher.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPFactory.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPIterator.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPMidi1ToBytestreamTranslator.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPMidi1ToMidi2DefaultTranslator.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPProtocols.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPReceiver.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPSysEx7.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPUtils.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\ump\juce_UMPView.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi\ump</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\juce_MidiBuffer.h">
+      <Filter>JUCE Modules\juce_audio_basics\midi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\juce_MidiDataConcatenator.h">
       <Filter>JUCE Modules\juce_audio_basics\midi</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_basics\midi\juce_MidiFile.h">
@@ -5307,52 +5496,10 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\audio_io\juce_SystemAudioVolume.h">
       <Filter>JUCE Modules\juce_audio_devices\audio_io</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPacket.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPackets.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPBytestreamInputHandler.h">
       <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPConversion.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPConverters.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPDispatcher.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPFactory.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPIterator.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPMidi1ToBytestreamTranslator.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPMidi1ToMidi2DefaultTranslator.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPProtocols.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPReceiver.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPSysEx7.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPU32InputHandler.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPUtils.h">
-      <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\ump\juce_UMPView.h">
       <Filter>JUCE Modules\juce_audio_devices\midi_io\ump</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\midi_io\juce_MidiDevices.h">
@@ -5394,6 +5541,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\include\oboe\Version.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\include\oboe</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\aaudio\AAudioExtensions.h">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\aaudio</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\aaudio\AAudioLoader.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\aaudio</Filter>
     </ClInclude>
@@ -5434,6 +5584,12 @@
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\SourceI16Caller.h">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\SourceI24Caller.h">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\SourceI32Caller.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\common\Trace.h">
@@ -5490,6 +5646,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\FlowGraphNode.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\FlowgraphUtilities.h">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\ManyToMultiConverter.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClInclude>
@@ -5514,6 +5673,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SinkI24.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SinkI32.h">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SourceFloat.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClInclude>
@@ -5521,6 +5683,9 @@
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SourceI24.h">
+      <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\flowgraph\SourceI32.h">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe\src\flowgraph</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\src\opensles\AudioInputStreamOpenSLES.h">
@@ -5548,9 +5713,6 @@
       <Filter>JUCE Modules\juce_audio_devices\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\juce_ios_Audio.h">
-      <Filter>JUCE Modules\juce_audio_devices\native</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\juce_MidiDataConcatenator.h">
       <Filter>JUCE Modules\juce_audio_devices\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\sources\juce_AudioSourcePlayer.h">
@@ -5994,6 +6156,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\pluginterfaces\vst\ivstparameterchanges.h">
       <Filter>JUCE Modules\juce_audio_processors\format_types\VST3_SDK\pluginterfaces\vst</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\pluginterfaces\vst\ivstparameterfunctionname.h">
+      <Filter>JUCE Modules\juce_audio_processors\format_types\VST3_SDK\pluginterfaces\vst</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\pluginterfaces\vst\ivstphysicalui.h">
       <Filter>JUCE Modules\juce_audio_processors\format_types\VST3_SDK\pluginterfaces\vst</Filter>
     </ClInclude>
@@ -6093,6 +6258,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\processors\juce_AudioProcessorEditor.h">
       <Filter>JUCE Modules\juce_audio_processors\processors</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\processors\juce_AudioProcessorEditorHostContext.h">
+      <Filter>JUCE Modules\juce_audio_processors\processors</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\processors\juce_AudioProcessorGraph.h">
       <Filter>JUCE Modules\juce_audio_processors\processors</Filter>
     </ClInclude>
@@ -6138,6 +6306,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\utilities\juce_AudioProcessorValueTreeState.h">
       <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\utilities\juce_ExtensionsVisitor.h">
+      <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\utilities\juce_ParameterAttachments.h">
       <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
     </ClInclude>
@@ -6145,6 +6316,12 @@
       <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\utilities\juce_RangedAudioParameter.h">
+      <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\utilities\juce_VST3ClientExtensions.h">
+      <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\utilities\juce_VSTCallbackHandler.h">
       <Filter>JUCE Modules\juce_audio_processors\utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\juce_audio_processors.h">
@@ -6229,6 +6406,9 @@
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\containers\juce_ScopedValueSetter.h">
+      <Filter>JUCE Modules\juce_core\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\containers\juce_SingleThreadedAbstractFifo.h">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\containers\juce_SortedSet.h">
@@ -6336,6 +6516,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\memory\juce_ReferenceCountedObject.h">
       <Filter>JUCE Modules\juce_core\memory</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\memory\juce_Reservoir.h">
+      <Filter>JUCE Modules\juce_core\memory</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\memory\juce_ScopedPointer.h">
       <Filter>JUCE Modules\juce_core\memory</Filter>
     </ClInclude>
@@ -6349,6 +6532,9 @@
       <Filter>JUCE Modules\juce_core\memory</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\misc\juce_ConsoleApplication.h">
+      <Filter>JUCE Modules\juce_core\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\misc\juce_Functional.h">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\misc\juce_Result.h">
@@ -6373,9 +6559,6 @@
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\native\juce_mac_CFHelpers.h">
-      <Filter>JUCE Modules\juce_core\native</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\native\juce_mac_ClangBugWorkaround.h">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_core\native\juce_mac_ObjCHelpers.h">
@@ -6843,6 +7026,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_events\native\juce_osx_MessageQueue.h">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_events\native\juce_ScopedLowPowerModeDisabler.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_events\native\juce_win32_HiddenMessageWindow.h">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
@@ -7035,6 +7221,33 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_graphics\juce_graphics.h">
       <Filter>JUCE Modules\juce_graphics</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\enums\juce_AccessibilityActions.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\enums\juce_AccessibilityEvent.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\enums\juce_AccessibilityRole.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\interfaces\juce_AccessibilityCellInterface.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\interfaces\juce_AccessibilityTableInterface.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\interfaces\juce_AccessibilityTextInterface.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\interfaces\juce_AccessibilityValueInterface.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\juce_AccessibilityHandler.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\accessibility\juce_AccessibilityState.h">
+      <Filter>JUCE Modules\juce_gui_basics\accessibility</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\application\juce_Application.h">
       <Filter>JUCE Modules\juce_gui_basics\application</Filter>
     </ClInclude>
@@ -7087,6 +7300,12 @@
       <Filter>JUCE Modules\juce_gui_basics\components</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_ComponentListener.h">
+      <Filter>JUCE Modules\juce_gui_basics\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_ComponentTraverser.h">
+      <Filter>JUCE Modules\juce_gui_basics\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_FocusTraverser.h">
       <Filter>JUCE Modules\juce_gui_basics\components</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\components\juce_ModalComponentManager.h">
@@ -7329,6 +7548,57 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\mouse\juce_TooltipClient.h">
       <Filter>JUCE Modules\juce_gui_basics\mouse</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_AccessibilityTextHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_AccessibilityElement.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAExpandCollapseProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAGridItemProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAGridProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAInvokeProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAProviderBase.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAProviders.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIARangeValueProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIASelectionProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIATextProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAToggleProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIATransformProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAValueProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_UIAWindowProvider.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\accessibility\juce_win32_WindowsUIAWrapper.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\x11\juce_linux_X11_Symbols.h">
       <Filter>JUCE Modules\juce_gui_basics\native\x11</Filter>
     </ClInclude>
@@ -7336,6 +7606,9 @@
       <Filter>JUCE Modules\juce_gui_basics\native\x11</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\juce_MultiTouchMapper.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\juce_ScopedDPIAwarenessDisabler.h">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\native\juce_win32_ScopedThreadDPIAwarenessSetter.h">
@@ -7443,6 +7716,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\windows\juce_DocumentWindow.h">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\windows\juce_MessageBoxOptions.h">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_basics\windows\juce_NativeMessageBox.h">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClInclude>
@@ -7495,9 +7771,6 @@
       <Filter>JUCE Modules\juce_gui_extra\embedding</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_extra\embedding\juce_NSViewComponent.h">
-      <Filter>JUCE Modules\juce_gui_extra\embedding</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_extra\embedding\juce_ScopedDPIAwarenessDisabler.h">
       <Filter>JUCE Modules\juce_gui_extra\embedding</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_gui_extra\embedding\juce_UIViewComponent.h">
@@ -8508,6 +8781,9 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\model\tracks\tracktion_MarkerTrack.h">
       <Filter>JUCE Modules\tracktion_engine\model\tracks</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\model\tracks\tracktion_MasterTrack.h">
+      <Filter>JUCE Modules\tracktion_engine\model\tracks</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\model\tracks\tracktion_TempoTrack.h">
       <Filter>JUCE Modules\tracktion_engine\model\tracks</Filter>
     </ClInclude>
@@ -8529,34 +8805,16 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_AudioNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_BufferingAudioNode.h">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_ClickMutingNode.h">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_ClickNode.h">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_CombiningAudioNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_FadeInOutAudioNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_HissingAudioNode.h">
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_PlayHead.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_MidiAudioNode.h">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_MixerAudioNode.h">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_PlayHeadAudioNode.h">
-      <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_SidechainAudioNode.h">
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_PluginAudioNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_SpeedRampAudioNode.h">
@@ -8565,7 +8823,7 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_TimedMutingAudioNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_TrackMutingAudioNode.h">
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_TrackCompAudioNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\audionodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\audionodes\tracktion_WaveAudioNode.h">
@@ -8614,6 +8872,9 @@
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_FadeInOutNode.h">
+      <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_HostedMidiInputDeviceNode.h">
       <Filter>JUCE Modules\tracktion_engine\playback\graph</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\graph\tracktion_InsertReturnNode.h">
@@ -8727,9 +8988,6 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_MPEStartTrimmer.h">
       <Filter>JUCE Modules\tracktion_engine\playback</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_PlayHead.h">
-      <Filter>JUCE Modules\tracktion_engine\playback</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\playback\tracktion_ScopedSteadyLoad.h">
       <Filter>JUCE Modules\tracktion_engine\playback</Filter>
     </ClInclude>
@@ -8764,6 +9022,9 @@
       <Filter>JUCE Modules\tracktion_engine\plugins\effects</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\effects\tracktion_FourOscPlugin.h">
+      <Filter>JUCE Modules\tracktion_engine\plugins\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\effects\tracktion_ImpulseResponsePlugin.h">
       <Filter>JUCE Modules\tracktion_engine\plugins\effects</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\plugins\effects\tracktion_LatencyPlugin.h">
@@ -8979,6 +9240,105 @@
     <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_engine\tracktion_engine.h">
       <Filter>JUCE Modules\tracktion_engine</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\include\farbot\AsyncCaller.hpp">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot\include\farbot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\include\farbot\fifo.hpp">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot\include\farbot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\include\farbot\RealtimeObject.hpp">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot\include\farbot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\include\farbot\RealtimeTraits.hpp">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot\include\farbot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\concurrentqueue.h">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\lightweightsemaphore.h">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\nodes\tracktion_graph_ConnectedNode.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\nodes\tracktion_graph_LatencyNode.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\nodes\tracktion_graph_SummingNode.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\players\tracktion_graph_NodePlayerUtilities.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph\players</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\players\tracktion_graph_SimpleNodePlayer.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph\players</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_LockFreeMultiThreadedNodePlayer.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_MultiThreadedNodePlayer.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_Node.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_NodePlayer.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_NodePlayerThreadPools.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_PlayHead.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_PlayHeadState.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_TestNodes.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_TestUtilities.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph\tracktion_graph_Utility.h">
+      <Filter>JUCE Modules\tracktion_graph\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_AudioBufferPool.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_AudioBufferStack.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_AudioFifo.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_GlueCode.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_graph_LatencyProcessor.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_MidiMessageArray.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_PerformanceMeasurement.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_RealTimeSpinLock.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_Semaphore.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\utilities\tracktion_Threads.h">
+      <Filter>JUCE Modules\tracktion_graph\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph_TestConfig.h">
+      <Filter>JUCE Modules\tracktion_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\tracktion_graph.h">
+      <Filter>JUCE Modules\tracktion_graph</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>JUCE Library Code</Filter>
     </ClInclude>
@@ -8987,7 +9347,7 @@
     <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\CMakeLists.txt">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe</Filter>
     </None>
-    <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\readme.md">
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_devices\native\oboe\README.md">
       <Filter>JUCE Modules\juce_audio_devices\native\oboe</Filter>
     </None>
     <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_formats\codecs\flac\Flac Licence.txt">
@@ -9017,7 +9377,7 @@
     <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\public.sdk\README.md">
       <Filter>JUCE Modules\juce_audio_processors\format_types\VST3_SDK\public.sdk</Filter>
     </None>
-    <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\JUCE_README.txt">
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\JUCE_README.md">
       <Filter>JUCE Modules\juce_audio_processors\format_types\VST3_SDK</Filter>
     </None>
     <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_audio_processors\format_types\VST3_SDK\LICENSE.txt">
@@ -9034,6 +9394,21 @@
     </None>
     <None Include="..\..\..\..\framework\tracktion_engine\modules\juce\modules\juce_graphics\image_formats\pnglib\libpng_readme.txt">
       <Filter>JUCE Modules\juce_graphics\image_formats\pnglib</Filter>
+    </None>
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\CMakeLists.txt">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot</Filter>
+    </None>
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\3rd_party\farbot\README.md">
+      <Filter>JUCE Modules\tracktion_graph\3rd_party\farbot</Filter>
+    </None>
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\docs\tracktion_graph_part_1_introduction.md">
+      <Filter>JUCE Modules\tracktion_graph\docs</Filter>
+    </None>
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\docs\tracktion_graph_part_2_node.md">
+      <Filter>JUCE Modules\tracktion_graph\docs</Filter>
+    </None>
+    <None Include="..\..\..\..\framework\tracktion_engine\modules\tracktion_graph\docs\tracktion_graph_part_3_nodeplayer.md">
+      <Filter>JUCE Modules\tracktion_graph\docs</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
